@@ -13,9 +13,9 @@ public class PostController {
 	
 	@PostMapping(value="/method1")
 	public Employee saveEmployee(@RequestBody Employee e) {
-		System.out.println("In the save method");
-		System.out.println(e.getName());
-		System.out.println(e.getAge());
+		System.out.println("In the save method helo");
+		System.out.println(" "+e.getName());
+		System.out.println(" "+e.getAge());
 		return e;
 		
 	}

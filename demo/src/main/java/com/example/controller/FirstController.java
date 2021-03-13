@@ -19,19 +19,19 @@ public class FirstController {
 	@GetMapping("/{name}")
 	public Employee getEmployeePP(@PathVariable String name) {
 
-		Employee e = new Employee("venkat", 30);
-		Map<String, Employee> mp = new HashMap<>();
-		mp.put("venkat", e);
-		return mp.get("venkat");
+		Employee e1 = new Employee("venkat", 30);
+		Map<String, Employee> mp1 = new HashMap<>();
+		mp1.put("venkat", e1);
+		return mp1.get("venkat");
 
 	}
 	@GetMapping("/")
 	public Employee getEmployeeRP(@RequestParam(value="name" )String name) {
 
-		Employee e = new Employee("venkat", 30);
-		Map<String, Employee> mp = new HashMap<>();
-		mp.put("venkat", e);
-		return mp.get("venkat");
+		Employee ee = new Employee("venkat", 30);
+		Map<String, Employee> mpp = new HashMap<>();
+		mpp.put("venkat", ee);
+		return mpp.get("venkat");
 
 	}
 }
